@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include "main.h"
+#ifndef _PUTCHAR_H_
+#define _PUTCHAR_H_
 
 /**
 * print_putchar - prints _putchar
@@ -8,7 +8,7 @@
 *
 * Return: 0
 */
-void print_putchar(void)
-{
-	printf("_putchar\n");
-}
+void print_putchar(void);
+
+
+#endif

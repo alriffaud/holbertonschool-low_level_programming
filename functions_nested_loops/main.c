@@ -1,14 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "main.h"
-
+#include "0-putchar.c"
 /**
-* print_putchar - prints _putchar
+* main - prints _putchar
 *
 * Description: This program prints _putchar, followed by a new line.
 *
 * Return: 0
 */
-void print_putchar(void)
+int main(void)
 {
-	printf("_putchar\n");
+	print_putchar();
 }
