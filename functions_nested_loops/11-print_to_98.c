@@ -12,23 +12,24 @@
  */
 void print_to_98(int n)
 {
+	int i;
+
 	if (n >= 98)
 	{
-		int i;
+
 		for (i = 98; i < n; i++)
 		{
 			printf("%d, ", i);
-		}	
-		printf("%d", n);	
-	}	
+		}
+		printf("%d", n);
+	}
 	else
-        {
-		int i;
+	{
 		for (i = n; i < 98; i++)
-                {
+		{
 			printf("%d, ", i);
 		}
 		printf("98");
-        }
+	}
 
 }
