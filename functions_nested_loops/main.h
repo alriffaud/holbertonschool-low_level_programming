@@ -6,9 +6,9 @@
 *
 * Description: This program prints _putchar, followed by a new line.
 *
-* Return: no return
+* Return: Always 0.
 */
-void _putchar(void);
+int print_putchar(void);
 
 /**
 * print_alphabet - prints the alphabet

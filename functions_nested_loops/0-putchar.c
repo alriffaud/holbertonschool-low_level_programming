@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	_putchar();
+	print_putchar();
 	return (0);
 }
 
@@ -20,9 +20,10 @@ int main(void)
 *
 * Description: This program prints _putchar, followed by a new line.
 *
-* Return: no return
+* Return: Always 0.
 */
-void _putchar(void)
+int print_putchar(void)
 {
 	printf("_putchar\n");
+	return (0);
 }
