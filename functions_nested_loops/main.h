@@ -60,4 +60,15 @@ int _islower(int c);
  */
 int _isalpha(int c);
 
+/**
+ * print_sign - Prints the sign of a number.
+ * @c: This is the char variable that we want to check.
+ *
+ * This function that prints the sign of a number.
+ *
+ * Return: Returns 1 and prints + if n is greater than zero. Returns 0 and
+ * prints 0 if n is zero. Returns -1 and prints - if n is less than zero.
+ */
+int print_sign(int c);
+
 #endif
