@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	imprimir();
+	print_putchar();
 	return (0);
 }
 
