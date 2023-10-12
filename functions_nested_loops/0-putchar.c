@@ -16,7 +16,7 @@ int main(void)
 }
 
 /**
-* _putchar - prints _putchar
+* print_putchar - prints _putchar
 *
 * Description: This program prints _putchar, followed by a new line.
 *
