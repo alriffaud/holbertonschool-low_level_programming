@@ -2,13 +2,13 @@
 #define _PUTCHAR_H_
 
 /**
-* print_putchar - prints _putchar
+* _putchar - prints _putchar
 *
 * Description: This program prints _putchar, followed by a new line.
 *
 * Return: no return
 */
-void print_putchar(void);
+void _putchar(void);
 
 /**
 * print_alphabet - prints the alphabet
