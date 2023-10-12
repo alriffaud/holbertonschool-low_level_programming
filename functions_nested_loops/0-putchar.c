@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	print_putchar();
+	_putchar();
 	return (0);
 }
 
