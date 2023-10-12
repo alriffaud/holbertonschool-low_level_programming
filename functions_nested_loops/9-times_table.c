@@ -13,7 +13,7 @@ void times_table(void)
 
 	for (fil = 0; fil <= 9; fil++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (col = 0; col <= 9; col++)
 		{
 			n = fil * col;
 			if (n >= 10)
@@ -26,7 +26,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(n + '0');
 			}
-			if (j != 9)
+			if (col != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
