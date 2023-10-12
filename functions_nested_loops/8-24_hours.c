@@ -10,21 +10,25 @@
  */
 void jack_bauer(void)
 {
-	int h, m;
+	int h = 0;
+	int m = 0;
+	int h_left, m_left;
 
-	for (h = 0; h < 24; h++)
+	while (h <= 23)
 	{
-		for (m = 0; m < 60; m++)
+		while (m <= 59)
 		{
-			if (h < 10 && m < 10)
-			{
-				_putchar('0');
-				_putchar((char)h);
-				_putchar(':');
-				_putchar('0');
-				_putchar((char)m);
-			}
+			m_left = m % 10;
+			h_left = h % 10;
+			_putchar(h / 10 + '0');
+			_putchar(h_left + '0');
+			_putchar(':');
+			_putchar(m / 10 + '0');
+			_putchar(m_left + '0');
+			m++;
+			_putchar('\n');
 		}
-
+		h++;
+		m = 0;
 	}
 }
