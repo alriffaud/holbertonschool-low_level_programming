@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	print_putchar();
+	imprimir();
 	return (0);
 }
 
@@ -22,7 +22,7 @@ int main(void)
 *
 * Return: Always 0.
 */
-int print_putchar(void)
+int imprimir(void)
 {
 	_putchar('_');
 	_putchar('p');
