@@ -20,4 +20,15 @@ void print_putchar(void);
 */
 void print_alphabet(void);
 
+/**
+* print_alphabet_x10 - print all alphabet 10 times
+*
+* Description: This program prints the alphabet in lowercase,
+* followed by a new line 10 times.
+*
+* * Return: 0
+*/
+void print_alphabet_x10(void);
+
+
 #endif
