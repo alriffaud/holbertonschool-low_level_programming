@@ -13,7 +13,10 @@ int print_last_digit(int n)
 	int last_char, c;
 
 	last_char = n % 10;
-	c = last_char + 48;
+	if (n >= 0)
+		c = last_char + 48;
+	else
+		c = _abs(last_char) + 48;
 	_putchar(c);
 	return (last_char);
 
