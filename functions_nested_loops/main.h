@@ -58,6 +58,6 @@ int _islower(int c);
  * Return: It returns 1 if c is a letter, lowercase or uppercase and returns
  * 0 otherwise.
  */
-int _isalpha(int c)
+int _isalpha(int c);
 
 #endif
