@@ -9,14 +9,13 @@
  */
 void times_table(void)
 {
-	int dif, i, j, n;
+	int col, fil, n;
 
-	dif = 0;
-	for (i = 1; i <= 10; i++)
+	for (fil = 0; fil <= 9; fil++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			n = j * dif;
+			n = fil * col;
 			if (n >= 10)
 			{
 				_putchar(n / 10 + '0');
@@ -34,7 +33,6 @@ void times_table(void)
 			}
 		}
 		 _putchar('\n');
-		 dif++;
 
 	}
 }
