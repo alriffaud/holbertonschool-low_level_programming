@@ -16,20 +16,23 @@ void times_table(void)
 		for (col = 0; col <= 9; col++)
 		{
 			n = fil * col;
-			if (n >= 10)
+			if (col == 0)
 			{
+				_putchar('0');
+			}
+			else if (n >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(n / 10 + '0');
 				_putchar(n % 10 + '0');
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar(n + '0');
-			}
-			if (col != 9)
-			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(n + '0');
 			}
 		}
 		 _putchar('\n');
