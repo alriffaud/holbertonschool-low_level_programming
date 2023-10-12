@@ -11,12 +11,12 @@
 
 int main(void)
 {
-	print_putchar();
+	imprimir();
 	return (0);
 }
 
 /**
-* print_putchar - prints _putchar
+* imprimir - prints _putchar
 *
 * Description: This program prints _putchar, followed by a new line.
 *

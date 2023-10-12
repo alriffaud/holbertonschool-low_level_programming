@@ -2,13 +2,13 @@
 #define _PUTCHAR_H_
 
 /**
-* print_putchar - prints _putchar
+* imprimir - prints _putchar
 *
 * Description: This program prints _putchar, followed by a new line.
 *
 * Return: Always 0.
 */
-int print_putchar(void);
+int imprimir(void);
 
 /**
 * print_alphabet - prints the alphabet
