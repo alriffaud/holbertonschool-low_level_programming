@@ -15,10 +15,16 @@ int print_last_digit(int n)
 
 	last_char = n % 10;
 	if (n >= 0)
+	{
 		c = last_char + 48;
+		_putchar(c);
+		return (last_char);
+	}
 	else
+	{
 		c = _abs(last_char) + 48;
-	_putchar(c);
-	return (last_char);
+		_putchar(c);
+		return (_abs(last_char));
+	}
 
 }
