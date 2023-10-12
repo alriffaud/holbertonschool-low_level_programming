@@ -1,4 +1,5 @@
 #include "main.h"
+#include "6-abs.c"
 /**
  * print_last_digit - last digit
  * @n: Is an integer number
