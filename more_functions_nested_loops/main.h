@@ -18,7 +18,7 @@ int _putchar(char c);
  *
  * Return: It returns 1 if c is uppercase and returns 0 otherwise.
  */
-int _isupper(int c)
+int _isupper(int c);
 
 
 #endif
