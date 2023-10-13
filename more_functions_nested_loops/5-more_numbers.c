@@ -14,11 +14,10 @@ void more_numbers(void)
 
 	for (fil = 1 ; fil <= 10 ; fil++)
 	{
-		for (n = 0 ; n <= 9; n++)
-			_putchar(n + '0');
-		for (n = 10; n <= 14; n++)
+		for (n = 0; n <= 14; n++)
 		{
-			_putchar((n / 10) + '0');
+			if (n < 10)
+				_putchar((n / 10) + '0');
 			_putchar((n % 10) + '0');
 		}
 		_putchar('\n');
