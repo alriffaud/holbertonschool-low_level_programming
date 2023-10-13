@@ -20,5 +20,16 @@ int _putchar(char c);
  */
 int _isupper(int c);
 
+/**
+ * _isdigit - Checks for a digit character.
+ * @c: This is the char variable that we want to check.
+ *
+ * This function checks if a character is a digit.
+ *
+ * Return: It returns 1 if c is digit and returns 0 otherwise.
+ */
+int _isdigit(int c);
+
+
 
 #endif
