@@ -44,7 +44,7 @@ void Fizz_Buzz(void)
 			continue;
 		}
 		else
-			printf("i ");
+			printf("%d ", i);
 
 	}
 	printf("\n");
