@@ -71,5 +71,15 @@ void print_most_numbers(void);
 */
 void more_numbers(void);
 
+/**
+ * print_line - Draws a straight line.
+ * @n: This is the number of times the character _ should be printed.
+ *
+ * This function draws a straight line in the terminal.
+ *
+ * Return: None.
+ */
+void print_line(int n);
+
 
 #endif
