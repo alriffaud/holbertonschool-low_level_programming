@@ -91,6 +91,15 @@ void print_line(int n);
  */
 void print_diagonal(int n);
 
+/**
+ * print_square - Prints a square.
+ * @size: This is the size of the square.
+ *
+ * This function draws a square, followed by a new line.
+ *
+ * Return: None.
+ */
+void print_square(int size);
 
 
 #endif
