@@ -2,6 +2,17 @@
 #include <stdio.h>
 
 /**
+ * main - Main Function
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	Fizz_Buzz();
+	return (0);
+}
+
+/**
  * Fizz_Buzz - Prints the result of the Fizz-Buzz test.
  *
  * This function prints the numbers from 1 to 100, followed by a new line.
