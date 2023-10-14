@@ -9,7 +9,10 @@
 */
 int main(void)
 {
-	fprintf(stderr, "%s", "and that piece of art is useful\" - Dora ");
-	fprintf(stderr, "%s", "Korpar, 2015-10-19\n");
+	const char message1[] = "and that piece of art is useful\" - Dora ";
+	const char message2[] = "Korpar, 2015-10-19\n";
+
+	write(2, message1, sizeof(message1) - 1);
+	write(2, message2, sizeof(message2) - 1);
 	return (1);
 }
