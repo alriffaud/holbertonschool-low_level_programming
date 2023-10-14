@@ -8,7 +8,7 @@
  *
  * Return: None.
  */
-void print_square(int size)
+void print_triangle(int size)
 {
 	if (size <= 0)
 		_putchar('\n');
@@ -20,7 +20,7 @@ void print_square(int size)
 		{
 			for (j = 1; j <= size - i; j++)
 				_putchar(' ');
-			for (j =size - i + 1; j <= size; j++)
+			for (j = size - i + 1; j <= size; j++)
 				_putchar('#');
 			_putchar('\n');
 		}
