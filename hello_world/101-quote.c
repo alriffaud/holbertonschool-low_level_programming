@@ -10,8 +10,9 @@
 int main(void)
 {
 
-	const char message[] = "and that piece of art is useful\" - Dora Kor
-		par, 2015-10-19\n";
-	write(2, message, sizeof(message) - 1);
+	const char message1[] = "and that piece of art is useful\" - Dora ";
+	const char message2[] = "Korpar, 2015-10-19\n";
+
+	write(2, message1 + message2, sizeof(message1 + message2) - 1);
 	return (1);
 }
