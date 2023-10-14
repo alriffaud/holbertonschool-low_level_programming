@@ -113,4 +113,15 @@ void print_square(int size);
  */
 void Fizz_Buzz(void);
 
+/**
+ * print_triangle - Prints a triangle.
+ * @size: This is the size of the triangle.
+ *
+ * This function prints a triangle, followed by a new line.
+ *
+ * Return: None.
+ */
+void print_square(int size);
+
+
 #endif
