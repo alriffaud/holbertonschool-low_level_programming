@@ -21,6 +21,6 @@ int main(void)
 		if (fib2 % 2 == 0)
 			sum += fib2;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
