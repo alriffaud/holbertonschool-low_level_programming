@@ -10,6 +10,7 @@
 int main(void)
 {
 	double fib1 = 1, fib2 = 2, aux;
+	long int cociente;
 	int contador;
 
 	printf("1, 2");
@@ -25,8 +26,9 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		printf(", %ld", (long int)(fib2 / 100000));
-		printf("%ld", (long int)(fib2 % 100000));
+		cociente = (long int)(fib2 / 100000);
+		printf(", %ld", cociente);
+		printf("%ld", (long int)(fib2 - 100000 * cociente));
 	}
 	printf("\n");
 	return (0);
