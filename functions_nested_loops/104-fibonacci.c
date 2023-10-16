@@ -22,12 +22,12 @@ int main(void)
 		if (contador >= 50)
 		{
 			fib2_part1 = (long double)fib2 / 100000000;
-			fib2_part2 = (long double)fib2 % 100000000;
-			printf(", %.0lf%.0lf", fib2_part1, fib2_part2);
+			fib2_part2 = (long double)(fib2 - 100000000 * fib2_part1);
+			printf(", %.0f%.0f", fib2_part1, fib2_part2);
 		}
 		else
 		{
-			printf(", %.0lf", fib2);
+			printf(", %.0f", fib2);
 		}
 	}
 	printf("\n");
