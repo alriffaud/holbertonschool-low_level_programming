@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int fib1 = 1, fib2 = 2, contador = 2, aux;
+	long int fib1 = 1, fib2 = 2, contador = 2, aux;
 
 	printf("1, 2");
 	while (contador <= 50)
