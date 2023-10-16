@@ -33,8 +33,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				m++;
 			}
+			m++;
 		}
 		h++;
 		m = 1;
