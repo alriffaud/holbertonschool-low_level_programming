@@ -20,5 +20,6 @@ int main(void)
 		printf(", %ld", fib2);
 		contador++;
 	}
+	printf("\n");
 	return (0);
 }
