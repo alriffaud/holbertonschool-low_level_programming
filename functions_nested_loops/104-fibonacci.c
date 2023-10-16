@@ -10,7 +10,7 @@
 int main(void)
 {
 	double fib1 = 1, fib2 = 2, aux;
-	long int fib2_part1, fib2_part2;
+	unsigned long int fib2_part1, fib2_part2;
 	int contador;
 
 	printf("1, 2");
@@ -19,11 +19,11 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		if (contador >= 40)
+		if (contador >= 35)
 		{
-			fib2_part1 = (long int)fib2 / 1000000000;
-			fib2_part2 = (long int)fib2 % 1000000000;
-			printf(", %ld%ld", fib2_part1, fib2_part2);
+			fib2_part1 = (unsigned long int)fib2 / 1000000000;
+			fib2_part2 = (unsigned long int)fib2 % 1000000000;
+			printf(", %u%u", fib2_part1, fib2_part2);
 		}
 		else
 		{
