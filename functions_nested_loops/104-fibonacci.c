@@ -9,15 +9,15 @@
  */
 int main(void)
 {
-	long int fib1 = 1, fib2 = 2, contador = 2, aux;
+	unsigned int fib1 = 1, fib2 = 2, contador = 2, aux;
 
 	printf("1, 2");
-	while (contador <= 98)
+	while (contador < 98)
 	{
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		printf(", %li", fib2);
+		printf(", %u", fib2);
 		contador++;
 	}
 	printf("\n");
