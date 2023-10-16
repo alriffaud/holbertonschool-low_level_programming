@@ -23,7 +23,7 @@ int main(void)
 		{
 			fib2_part1 = (unsigned long int)fib2 / 1000000000;
 			fib2_part2 = (unsigned long int)fib2 % 1000000000;
-			printf(", %u%u", fib2_part1, fib2_part2);
+			printf(", %lu%lu", fib2_part1, fib2_part2);
 		}
 		else
 		{
