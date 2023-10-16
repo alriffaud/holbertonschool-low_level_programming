@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	double fib1 = 1, fib2 = 2, aux;
-	unsigned long int fib2_part1, fib2_part2;
+	long double fib1 = 1, fib2 = 2, aux;
+	long double fib2_part1, fib2_part2;
 	int contador;
 
 	printf("1, 2");
@@ -19,15 +19,15 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		if (contador >= 38)
+		if (contador >= 50)
 		{
-			fib2_part1 = (unsigned long int)fib2 / 100000000;
-			fib2_part2 = (unsigned long int)fib2 % 100000000;
-			printf(", %lu%lu", fib2_part1, fib2_part2);
+			fib2_part1 = (long double)fib2 / 100000000;
+			fib2_part2 = (long double)fib2 % 100000000;
+			printf(", %.0lf%.0lf", fib2_part1, fib2_part2);
 		}
 		else
 		{
-			printf(", %.0f", fib2);
+			printf(", %.0lf", fib2);
 		}
 	}
 	printf("\n");
