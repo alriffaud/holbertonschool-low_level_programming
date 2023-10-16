@@ -10,7 +10,7 @@
 void times_table(int n)
 {
 	if (n >= 0 && n <= 15)
-	{	
+	{
 		int col, fil, prod;
 
 		for (fil = 0; fil <= n; fil++)
@@ -32,7 +32,7 @@ void times_table(int n)
 				else if (prod >= 100)
 				{
 					_putchar(',');
-					_putchar(' ');			
+					_putchar(' ');
 					_putchar(n / 100 + '0');
 					_putchar(((n / 10) % 10) + '0');
 					_putchar(n % 100 + '0');
@@ -45,7 +45,7 @@ void times_table(int n)
 					_putchar(n + '0');
 				}
 			}
-		 	_putchar('\n');
+			_putchar('\n');
 
 		}
 	}
