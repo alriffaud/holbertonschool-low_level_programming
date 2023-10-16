@@ -10,25 +10,25 @@
 int main(void)
 {
 	double fib1 = 1, fib2 = 2, aux;
-	long int cociente;
+	long int fib2_part1, fib2_part2;
 	int contador;
 
 	printf("1, 2");
-	for (contador = 2; contador < 50; contador++)
+	for (contador = 2; contador < 98; contador++)
 	{
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		printf(", %ld", (long int)fib2);
-	}
-	for (contador = 50; contador < 98; contador++)
-	{
-		aux = fib1;
-		fib1 = fib2;
-		fib2 = aux + fib2;
-		cociente = (long int)(fib2 / 100000);
-		printf(", %ld", cociente);
-		printf("%ld", (long int)(fib2 - 100000 * cociente));
+		if (contador >= 40)
+		{
+			fib2_part1 = (long int)fib2 / 100000;
+			fib2_part2 = (long int)fib2 % 100000;
+			printf(", %ld%05ld", fib2_part1, fib2_part2);
+		}
+		else
+		{
+			printf(", %.0lf", fib2);
+		}
 	}
 	printf("\n");
 	return (0);
