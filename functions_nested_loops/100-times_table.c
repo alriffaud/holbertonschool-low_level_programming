@@ -19,10 +19,9 @@ void print_times_table(int n)
 			{
 				prod = fil * col;
 				if (col == 0)
-				{
 					_putchar('0');
-				}
-				 _putchar(',');
+				else
+					_putchar(',');
 				if (prod >= 100)
 					_putchar(' ');
 				if (prod >= 10 && prod <= 99)
