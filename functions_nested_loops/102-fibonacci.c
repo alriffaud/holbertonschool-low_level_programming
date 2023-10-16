@@ -12,7 +12,7 @@ int main(void)
 	long int fib1 = 1, fib2 = 2, contador = 2, aux;
 
 	printf("1, 2");
-	while (contador <= 50)
+	while (contador < 50)
 	{
 		aux = fib1;
 		fib1 = fib2;
