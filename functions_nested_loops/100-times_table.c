@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * times_table- Prints the n times table.
+ * print_times_table - Prints the n times table.
  * @n: Is an integer and represent the times number of the table.
  * Description: This function prints the n times table, starting with 0.
  *
  * Return: None.
  */
-void times_table(int n)
+void print_times_table(int n)
 {
 	if (n >= 0 && n <= 15)
 	{
