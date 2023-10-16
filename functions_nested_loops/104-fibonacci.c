@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	double fib1 = 1, fib2 = 2, contador = 2, aux;
+	long int fib1 = 1, fib2 = 2, contador = 2, aux;
 
 	printf("1, 2");
 	while (contador < 98)
@@ -17,7 +17,7 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		printf(", %ld", (int)fib2);
+		printf(", %li", fib2);
 		contador++;
 	}
 	printf("\n");
