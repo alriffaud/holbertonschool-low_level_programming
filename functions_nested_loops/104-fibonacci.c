@@ -21,8 +21,8 @@ int main(void)
 		fib2 = aux + fib2;
 		if (contador >= 50)
 		{
-			fib2_part1 = (long double)fib2 / 100000000;
-			fib2_part2 = (long double)(fib2 - 100000000 * fib2_part1);
+			fib2_part1 = fib2 / 100000000;
+			fib2_part2 = fib2 - (100000000 * fib2_part1);
 			printf(", %.0Lf%.0Lf", fib2_part1, fib2_part2);
 		}
 		else
