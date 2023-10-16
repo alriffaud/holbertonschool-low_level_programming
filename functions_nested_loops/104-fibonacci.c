@@ -19,11 +19,11 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		if (contador >= 40)
+		if (contador >= 30)
 		{
-			fib2_part1 = (long int)fib2 / 10000000;
-			fib2_part2 = ((long int)fib2 / 100000) % 100;
-			fib2_part3 = (long int)fib2 % 100000;
+			fib2_part1 = (long int)fib2 / 1000000;
+			fib2_part2 = ((long int)fib2 % 1000000) / 1000;
+			fib2_part3 = ((long int)fib2 % 1000000) % 1000;
 			printf(", %ld%03ld%05ld", fib2_part1, fib2_part2, fib2_part3);
 		}
 		else
