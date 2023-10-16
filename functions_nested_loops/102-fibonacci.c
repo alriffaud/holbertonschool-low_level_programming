@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-	int fib1 = 1, fib2 = 2, contador = 2;
+	int fib1 = 1, fib2 = 2, contador = 2, aux;
 
 	printf("1 2 ");
 	while (contador <= 50)
 	{
-
+		aux = fib1;
 		fib1 = fib2;
-		fib2 = fib1 + fib2;
+		fib2 = aux + fib2;
 		printf("%d ", fib2);
 		contador++;
 	}
