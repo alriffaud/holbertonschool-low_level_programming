@@ -17,7 +17,7 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		printf(", %d", fib2);
+		printf(", %ld", fib2);
 		contador++;
 	}
 	return (0);
