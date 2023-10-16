@@ -10,9 +10,8 @@
  */
 int main(void)
 {
-	long int fib1 = 1, fib2 = 2, aux, sum = 0;
+	long int fib1 = 1, fib2 = 2, aux, sum = 2;
 
-	printf("1, 2");
 	while (fib2 < 4000000)
 	{
 		aux = fib1;
