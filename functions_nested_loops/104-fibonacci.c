@@ -19,7 +19,7 @@ int main(void)
 		aux = fib1;
 		fib1 = fib2;
 		fib2 = aux + fib2;
-		if (contador >= 35)
+		if (contador >= 38)
 		{
 			fib2_part1 = (unsigned long int)fib2 / 100000000;
 			fib2_part2 = (unsigned long int)fib2 % 100000000;
