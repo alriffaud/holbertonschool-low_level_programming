@@ -10,7 +10,7 @@
 int main(void)
 {
 	double fib1 = 1, fib2 = 2, aux;
-	long int fib2_part1, fib2_part2;
+	long int fib2_part1, fib2_part2, fib2_part3;
 	int contador;
 
 	printf("1, 2");
@@ -21,9 +21,10 @@ int main(void)
 		fib2 = aux + fib2;
 		if (contador >= 40)
 		{
-			fib2_part1 = (long int)fib2 / 10000000;
-			fib2_part2 = (long int)fib2 % 10000000;
-			printf(", %ld%05ld", fib2_part1, fib2_part2);
+			fib2_part1 = (long int)fib2 / 100000000;
+			fib2_part2 = ((long int)fib2 / 100000) % 1000;
+			fib2_part3 = (long int)fib2 % 100000;
+			printf(", %ld%03ld%05ld", fib2_part1, fib2_part2, fib2_part3);
 		}
 		else
 		{
