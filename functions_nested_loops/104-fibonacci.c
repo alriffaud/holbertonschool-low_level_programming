@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf(", %.0lf", fib2);
+			printf(", %.0f", fib2);
 		}
 	}
 	printf("\n");
