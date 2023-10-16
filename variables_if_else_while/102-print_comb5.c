@@ -19,19 +19,22 @@ int main(void)
 	{
 		while (m <= 99)
 		{
-			m_left = m % 10;
-			h_left = h % 10;
-			putchar(h / 10 + '0');
-			putchar(h_left + '0');
-			putchar(' ');
-			putchar(m / 10 + '0');
-			putchar(m_left + '0');
-			if (h != 98 || m != 99)
+			if (h < m)
 			{
-				putchar(',');
+				m_left = m % 10;
+				h_left = h % 10;
+				putchar(h / 10 + '0');
+				putchar(h_left + '0');
 				putchar(' ');
+				putchar(m / 10 + '0');
+				putchar(m_left + '0');
+				if (h != 98 || m != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				m++;
 			}
-			m++;
 		}
 		h++;
 		m = 1;
