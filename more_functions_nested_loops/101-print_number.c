@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * countDigits - Counts the number of digits of an integer number.
@@ -6,7 +7,7 @@
  *
  * Return: Returns the variable count which is the number of digits.
  */
-int countDigits(long int num)
+int countDigits(int num)
 {
 	int count = 0;
 
@@ -28,9 +29,9 @@ int countDigits(long int num)
  *
  * Return: Returns the variable res.
  */
-long int potenciaEntera(long int numero, long int potencia)
+int potenciaEntera(int numero, int potencia)
 {
-	long int res = 1;
+	int res = 1;
 
 	if (potencia == 0)
 		return (1);
@@ -51,14 +52,19 @@ long int potenciaEntera(long int numero, long int potencia)
 *
 * Return: None.
 */
-void print_number(long int n)
+void print_number(int n)
 {
-	long int digit, rest, num_dig;
+	int digit, rest, num_dig;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
+	}
+	else if (n == INT_MIX)
+	{
+		_putchar('-');
+		rest = -1 * (INT_MIN + 1);
 	}
 	else if (n < 0)
 	{
