@@ -10,7 +10,7 @@ int primo(int n)
 {
 	int res = 0, m = 2;
 
-	while (res = 0 && m * m < n)
+	while (res == 0 && m * m < n)
 	{
 		if (n % m == 0)
 			res = 1;
@@ -30,10 +30,10 @@ int primo(int n)
  */
 int main(void)
 {
-	const int num = 612852475143;
+	const long int num = 612852475143;
 	int i = (int)sqrt(num), aux = 0;
 
-	while (i > 1 && aux = 0)
+	while (i > 1 && aux == 0)
 	{
 		if (primo(i) == 1 && num % i == 0)
 		{
