@@ -8,6 +8,9 @@
  */
 int countDigits(int num)
 {
+	if (num == 0)
+		return (1);
+
 	int count = 0;
 
 	while (num != 0)
@@ -27,9 +30,12 @@ int countDigits(int num)
  */
 int potenciaEntera(int numero, int potencia)
 {
-	int res = numero;
+	if (potencia == 0)
+		return (1);
 
-	while (potencia > 1)
+	int res = 1;
+
+	while (potencia > 0)
 	{
 		res *= numero;
 		potencia--;
@@ -50,6 +56,11 @@ void print_number(int n)
 	int digit, rest = n, num_dig;
 
 	num_dig = countDigits(n);
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
@@ -57,8 +68,8 @@ void print_number(int n)
 	}
 	while (num_dig != 0)
 	{
-		digit = rest / potenciaEntera(10, num_dig);
-		rest =  rest % potenciaEntera(10, num_dig);
+		digit = rest / potenciaEntera(10, num_dig - 1);
+		rest =  rest % potenciaEntera(10, num_dig - 1);
 		_putchar(digit + '0');
 		num_dig--;
 	}
