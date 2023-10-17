@@ -37,7 +37,7 @@ int main(void)
 	{
 		if (primo(i) == 1 && num % i == 0)
 		{
-			printf("%d\n", i);
+			printf("%ld\n", i);
 			aux = 1;
 		}
 		i--;
