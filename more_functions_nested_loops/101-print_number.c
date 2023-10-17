@@ -64,7 +64,7 @@ void print_number(int n)
 	else if (n == INT_MIN)
 	{
 		_putchar('-');
-		rest = (-1 * (INT_MIN + 1)) + 1;
+		rest = -1 * (INT_MIN + 1);
 	}
 	else if (n < 0)
 	{
