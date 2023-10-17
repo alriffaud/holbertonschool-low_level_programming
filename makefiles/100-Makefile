@@ -12,10 +12,10 @@ $(NAME): $(SRC) m.h
 	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 clean:
-	@/bin/rm -f *~ $(NAME)
+	@$(RM) -f *~ $(NAME)
 
 oclean:
-	@/bin/rm -f $(OBJ)
+	@$(RM) -f $(OBJ)
 
 fclean: clean oclean
 
