@@ -123,5 +123,15 @@ void Fizz_Buzz(void);
  */
 void print_triangle(int size);
 
+/**
+* print_number - prints an integer.
+* @n: Is the integer to print
+*
+* Description: This function prints an integer number.
+*
+* Return: None.
+*/
+void print_number(int n);
+
 
 #endif
