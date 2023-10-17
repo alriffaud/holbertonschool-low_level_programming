@@ -8,10 +8,10 @@
  */
 int countDigits(int num)
 {
+	int count = 0;
+
 	if (num == 0)
 		return (1);
-
-	int count = 0;
 
 	while (num != 0)
 	{
@@ -30,10 +30,10 @@ int countDigits(int num)
  */
 int potenciaEntera(int numero, int potencia)
 {
+	int res = 1;
+
 	if (potencia == 0)
 		return (1);
-
-	int res = 1;
 
 	while (potencia > 0)
 	{
