@@ -131,7 +131,7 @@ void print_triangle(int size);
 *
 * Return: None.
 */
-void print_number(int n);
+void print_number(long int n);
 
 
 #endif
