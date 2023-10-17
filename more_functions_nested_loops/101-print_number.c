@@ -1,5 +1,21 @@
 #include "main.h"
 
+
+/**
+ * countDigits - Counts the number of digits of an integer number.
+ * @num: It is the integer whose number of digits is calculated.
+ *
+ * Return: Returns the variable count which is the number of digits.
+ */ 
+int countDigits(int num) {
+    int count = 0;
+    while (num != 0) {
+        num /= 10;
+        count++;
+    }
+    return count;
+}
+
 /**
 * print_number - prints an integer.
 * @n: Is the integer to print
@@ -10,24 +26,19 @@
 */
 void print_number(int n)
 {
-	if (n > 0 && n <= 9)
-		_putchar(n + '0');
-	else if (n <= 99)
+	int digit, rest = n , num_dig;
+
+	num_dig = countDigits(n);
+	if (n < 0)
 	{
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
+		_putchar('-');
+		n = -n;
 	}
-	else if (n <= 999)
+	while (num_dig != 0)
 	{
-		_putchar(n / 100 + '0');
-		_putchar((n % 100) / 10 + '0');
-		_putchar((n % 100) % 10 + '0');
-	}
-	else if (n <= 9999)
-	{
-		_putchar(n / 1000 + '0');
-		_putchar((n % 1000) / 100 + '0');
-		_putchar(((n % 1000) % 100) / 10 + '0');
-		_putchar(((n % 1000) % 100) % 10 + '0');
+		digit = rest / (10 * num_dig);
+		rest =  rest % (10 * num_dig);
+		_putchar(digit + '0');
+		num_dig--;
 	}
 }
