@@ -5,9 +5,10 @@
  *
  * Return: 1 if n is a prime number, 0 if not.
  */
-int primo(int n)
+int primo(long int n)
 {
-	int res = 0, m = 2;
+	int res = 0;
+	long int m = 2;
 
 	while (res == 0 && m * m < n)
 	{
