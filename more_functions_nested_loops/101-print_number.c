@@ -6,14 +6,17 @@
  * @num: It is the integer whose number of digits is calculated.
  *
  * Return: Returns the variable count which is the number of digits.
- */ 
-int countDigits(int num) {
-    int count = 0;
-    while (num != 0) {
-        num /= 10;
-        count++;
-    }
-    return count;
+ */
+int countDigits(int num)
+{
+	int count = 0;
+
+	while (num != 0)
+	{
+		num /= 10;
+		count++;
+	}
+	return (count);
 }
 
 /**
@@ -26,7 +29,7 @@ int countDigits(int num) {
 */
 void print_number(int n)
 {
-	int digit, rest = n , num_dig;
+	int digit, rest = n, num_dig;
 
 	num_dig = countDigits(n);
 	if (n < 0)
