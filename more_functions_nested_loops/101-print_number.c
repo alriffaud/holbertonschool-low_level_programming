@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <math.h>
 
 /**
  * countDigits - Counts the number of digits of an integer number.
@@ -39,8 +39,8 @@ void print_number(int n)
 	}
 	while (num_dig != 0)
 	{
-		digit = rest / (10 * num_dig);
-		rest =  rest % (10 * num_dig);
+		digit = rest / pow(10, num_dig);
+		rest =  rest % pow(10, num_dig);
 		_putchar(digit + '0');
 		num_dig--;
 	}
