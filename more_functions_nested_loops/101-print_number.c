@@ -39,8 +39,8 @@ void print_number(int n)
 	}
 	while (num_dig != 0)
 	{
-		digit = rest / pow(10, num_dig);
-		rest =  rest % pow(10, num_dig);
+		digit = rest / (int)pow(10, num_dig);
+		rest =  rest % (int)pow(10, num_dig);
 		_putchar(digit + '0');
 		num_dig--;
 	}
