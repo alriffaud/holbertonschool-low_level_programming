@@ -60,6 +60,10 @@ void print_number(int n)
 		_putchar('0');
 		return;
 	}
+	else if (n == INT_MIN)
+	{
+		_putchar('-');
+		rest = -1 * n;
 	else if (n < 0)
 	{
 		_putchar('-');
