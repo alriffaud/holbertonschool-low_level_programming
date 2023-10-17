@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * countDigits - Counts the number of digits of an integer number.
@@ -17,6 +16,25 @@ int countDigits(int num)
 		count++;
 	}
 	return (count);
+}
+
+/**
+ * potenciaEntera - This function calculates the integer power of an integer.
+ * @numero: This is the base.
+ * @potencia: This is the power.
+ *
+ * Return: Returns the variable res.
+ */
+int potenciaEntera(int numero, int potencia)
+{
+	int res = numero;
+
+	while (potencia > 1)
+	{
+		res *= numero;
+		potencia--;
+	}
+	return (res);
 }
 
 /**
@@ -39,8 +57,8 @@ void print_number(int n)
 	}
 	while (num_dig != 0)
 	{
-		digit = rest / (int)pow(10, num_dig);
-		rest =  rest % (int)pow(10, num_dig);
+		digit = rest / potenciaEntera(10, num_dig);
+		rest =  rest % potenciaEntera(10, num_dig);
 		_putchar(digit + '0');
 		num_dig--;
 	}
