@@ -31,7 +31,7 @@ int primo(int n)
 int main(void)
 {
 	const long int num = 612852475143;
-	int i = (int)sqrt(num), aux = 0;
+	long int i = (long int)sqrt(num), aux = 0;
 
 	while (i > 1 && aux == 0)
 	{
@@ -42,6 +42,5 @@ int main(void)
 		}
 		i--;
 	}
-	printf("%d\n", i);
 	return (0);
 }
