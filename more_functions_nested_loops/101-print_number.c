@@ -53,19 +53,21 @@ int potenciaEntera(int numero, int potencia)
 */
 void print_number(int n)
 {
-	int digit, rest = n, num_dig;
+	int digit, rest, num_dig;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	if (n < 0)
+	else if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		rest = -n;
 	}
-	num_dig = countDigits(n);
+	else
+		rest = n;
+	num_dig = countDigits(rest);
 	while (num_dig != 0)
 	{
 		digit = rest / potenciaEntera(10, num_dig - 1);
