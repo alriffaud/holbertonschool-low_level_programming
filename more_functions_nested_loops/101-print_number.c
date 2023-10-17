@@ -83,7 +83,7 @@ void print_number(int n)
 			digit = digit + 1;
 			_putchar(digit + '0');
 			return;
-		}	
+		}
 		_putchar(digit + '0');
 		num_dig--;
 	}
