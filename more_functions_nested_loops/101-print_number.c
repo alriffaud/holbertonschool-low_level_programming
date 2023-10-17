@@ -6,7 +6,7 @@
  *
  * Return: Returns the variable count which is the number of digits.
  */
-int countDigits(int num)
+int countDigits(long int num)
 {
 	int count = 0;
 
@@ -28,9 +28,9 @@ int countDigits(int num)
  *
  * Return: Returns the variable res.
  */
-int potenciaEntera(int numero, int potencia)
+long int potenciaEntera(long int numero, long int potencia)
 {
-	int res = 1;
+	long int res = 1;
 
 	if (potencia == 0)
 		return (1);
@@ -51,19 +51,15 @@ int potenciaEntera(int numero, int potencia)
 *
 * Return: None.
 */
-void print_number(int n)
+void print_number(long int n)
 {
-	int digit, rest, num_dig;
+	long int digit, rest, num_dig;
 
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	else if (n == INT_MIN)
-	{
-		_putchar('-');
-		rest = -1 * n;
 	else if (n < 0)
 	{
 		_putchar('-');
