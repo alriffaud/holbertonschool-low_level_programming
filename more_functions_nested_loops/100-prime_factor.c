@@ -30,7 +30,7 @@ int primo(int n)
 int main(void)
 {
 	const long int num = 612852475143;
-	long int i = (long int)(num/2), aux = 0;
+	long int i = (long int)(num / 2), aux = 0;
 
 	while (i > 1 && aux == 0)
 	{
