@@ -55,7 +55,6 @@ void print_number(int n)
 {
 	int digit, rest = n, num_dig;
 
-	num_dig = countDigits(n);
 	if (n == 0)
 	{
 		_putchar('0');
@@ -66,6 +65,7 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
+	num_dig = countDigits(n);
 	while (num_dig != 0)
 	{
 		digit = rest / potenciaEntera(10, num_dig - 1);
