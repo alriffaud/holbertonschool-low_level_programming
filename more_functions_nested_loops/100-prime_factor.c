@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 /**
  * primo - Determines if a number is a prime number or not.
  * @n: This is the integer number we want to check.
@@ -31,7 +30,7 @@ int primo(int n)
 int main(void)
 {
 	const long int num = 612852475143;
-	long int i = (long int)sqrt(num), aux = 0;
+	long int i = (long int)(num/2), aux = 0;
 
 	while (i > 1 && aux == 0)
 	{
