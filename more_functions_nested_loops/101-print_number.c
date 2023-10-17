@@ -78,6 +78,12 @@ void print_number(int n)
 	{
 		digit = rest / potenciaEntera(10, num_dig - 1);
 		rest =  rest % potenciaEntera(10, num_dig - 1);
+		if (num_dig == 1 && n == INT_MIN)
+		{
+			digit = digit + 1;
+			_putchar(digit + '0');
+			return;
+		}	
 		_putchar(digit + '0');
 		num_dig--;
 	}
