@@ -10,7 +10,7 @@ int primo(long int n)
 	int res = 0;
 	long int m = 2;
 
-	while (res == 0 && m * m < n)
+	while (res == 0 && m * m <= n)
 	{
 		if (n % m == 0)
 			res = 1;
@@ -31,16 +31,16 @@ int primo(long int n)
 int main(void)
 {
 	const long int num = 612852475143;
-	long int i = (num / 2), aux = 0;
+	long int i = 2, aux = 0;
 
-	while (i > 1 && aux == 0)
+	while (i * i < num && aux == 0)
 	{
 		if (primo(i) == 1 && num % i == 0)
 		{
-			printf("%ld\n", i);
+			printf("%ld\n", num / i);
 			aux = 1;
 		}
-		i--;
+		i++;
 	}
 	return (0);
 }
