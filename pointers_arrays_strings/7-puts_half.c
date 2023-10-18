@@ -29,7 +29,7 @@ void puts_half(char *s)
 	int len;
 
 	len = (_strlen(s) / 2);
-	s = s + len;
+	s = s + len + 1;
 	while (*s != '\0')
 	{
 		_putchar(*s);
