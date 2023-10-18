@@ -11,7 +11,7 @@ void _puts(char *s)
 {
 	int cant;
 
-	cant = _strlen(&s);
+	cant = _strlen(s);
 	s = s + cant;
 	while (*s != '\0')
 	{
