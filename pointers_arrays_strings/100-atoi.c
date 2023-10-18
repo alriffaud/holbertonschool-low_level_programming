@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int res = 0, num_dig = 0, sign = 1;
 
-	while (*s != '\0' && (*s == '-' || (*s >= '0' && *s <= '9')))
+	while (*s != '\0' && (*s == '-' || *s == '+' || (*s >= '0' && *s <= '9')))
 	{
 		if (*s == '-')
 		{
@@ -19,7 +19,7 @@ int _atoi(char *s)
 		}
 		if (*s >= '0' && *s <= '9')
 		{
-			if (num_dig > 0)
+			if (num_dig > 0 && res < INT_MAX / 10)
 			{
 				res = 10 * res + (*s - '0');
 				num_dig++;
@@ -32,5 +32,8 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	return (sign * res);
+	if (res < INT_MAX / 10)
+		return (sign * res);
+	else
+		return (10 * sign * res + sign * (*s - '0'));
 }
