@@ -12,15 +12,18 @@ int _atoi(char *s)
 
 	while (*s != '\0')
 	{
-		if (num_dig == 0 && *s >= '0' && *s <= '9')
+		if (*s >= '0' && *s <= '9')
 		{
-			res = *s - '0';
-			num_dig = 1;
-		}
-		if (num_dig > 0 && *s >= '0' && *s <= '9')
-		{
-			res = 10 * res + (*s - '0');
-			num_dig++;
+			if (num_dig > 0)
+			{
+				res = 10 * res + (*s - '0');
+				num_dig++;
+			}
+			else if (num_dig == 0)
+			{
+				res = *s - '0';
+				num_dig = 1;
+			}
 		}
 		s++;
 	}
