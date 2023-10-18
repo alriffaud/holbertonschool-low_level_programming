@@ -6,7 +6,7 @@
  *
  * Return: None
  */
-void swap_char(const char *a, const char *b)
+void swap_char(char *a, char *b)
 {
 	char aux = *a;
 
