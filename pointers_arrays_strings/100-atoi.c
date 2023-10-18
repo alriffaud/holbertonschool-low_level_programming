@@ -10,14 +10,14 @@ int _atoi(char *s)
 {
 	int res = 0, num_dig = 0;
 
-	while (s != NULL)
+	while (*s != '\0')
 	{
-		if (num_dig == 0 && *s >= 48 && *s <= 57)
+		if (num_dig == 0 && *s >= '0' && *s <= '9')
 		{
 			res = *s - '0';
 			num_dig = 1;
 		}
-		if (num_dig > 0 && *s >= 48 && *s <= 57)
+		if (num_dig > 0 && *s >= '0' && *s <= '9')
 		{
 			res = 10 * res + (*s - '0');
 			num_dig++;
