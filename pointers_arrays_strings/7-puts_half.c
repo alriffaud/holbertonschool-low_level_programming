@@ -30,9 +30,9 @@ void puts_half(char *s)
 
 	lon = _strlen(s);
 	if (lon % 2 == 0)
-		len = (_strlen(s) / 2);
+		len = _strlen(s) / 2;
 	else
-		len = (_strlen(s) - 1) / 2);
+		len = (_strlen(s) - 1) / 2;
 	s = s + len;
 	while (*s != '\0')
 	{
