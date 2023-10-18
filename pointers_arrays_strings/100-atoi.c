@@ -22,7 +22,7 @@ int _atoi(char *s)
 		}
 		if (*s >= '0' && *s <= '9')
 		{
-			if (num_dig > 0 && res < INT_MAX / 10)
+			if (num_dig > 0 && res < (-INT_MIN - (*s - '0')) / 10)
 			{
 				res = 10 * res + (*s - '0');
 				num_dig++;
@@ -37,7 +37,7 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	if (res < INT_MAX / 10)
+	if (res < (-INT_MIN - (*s - '0')) / 10)
 		return (sign * res);
 	else
 		return (10 * sign * res + sign * (*s - '0'));
