@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_rev - This function prints a string in reverse order.
  * @s: Is the pointer to an string.
@@ -9,9 +10,13 @@
  */
 void print_rev(char *s)
 {
-	int count;
+	int count = 0;
 
-	count = _strlen(s);
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
 	while (count >= 0)
 	{
 		_putchar(*(s + count));
