@@ -9,10 +9,13 @@
  */
 int _atoi(char *s)
 {
-	int res = 0, num_dig = 0, sign = 1;
+	int res = 0, num_dig = 0, sign = 1, start = 0;
 
-	while (*s != '\0' && (*s == '-' || *s == '+' || *s == ' ' || (*s >= '0' && *s <= '9')))
+	while (*s != '\0')
 	{
+		if (start == 1 && *s != '-' && *s != '+' && *s != ' '
+		&& !(*s >= '0' && *s <= '9'))
+			break;
 		if (*s == '-')
 		{
 			sign *= -1;
@@ -23,11 +26,13 @@ int _atoi(char *s)
 			{
 				res = 10 * res + (*s - '0');
 				num_dig++;
+				start = 1;
 			}
 			else if (num_dig == 0)
 			{
 				res = *s - '0';
 				num_dig = 1;
+				start = 1;
 			}
 		}
 		s++;
