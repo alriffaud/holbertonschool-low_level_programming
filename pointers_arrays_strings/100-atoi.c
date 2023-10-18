@@ -8,10 +8,14 @@
  */
 int _atoi(char *s)
 {
-	int res = 0, num_dig = 0;
+	int res = 0, num_dig = 0, sign = 1;
 
 	while (*s != '\0')
 	{
+		if (*s == '-')
+		{
+			sign *= -1;
+		}
 		if (*s >= '0' && *s <= '9')
 		{
 			if (num_dig > 0)
@@ -27,5 +31,5 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	return (res);
+	return (sign * res);
 }
