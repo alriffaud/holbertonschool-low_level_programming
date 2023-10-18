@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - This function .copies the string pointed to by src.
+ * *_strcpy - This function .copies the string pointed to by src.
  * @src: Is the pointer to the origin string.
  * @dest: Is the pointer to return.
  *
@@ -10,7 +10,6 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	dest = src;
 	while (*src != '\0')
 	{
 		*dest = *src;
