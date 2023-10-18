@@ -17,10 +17,12 @@ void print_rev(char *s)
 		s++;
 		count++;
 	}
+	s = s + count;
 	while (count >= 0)
 	{
-		_putchar(*(s + count));
+		_putchar(*s);
 		count--;
+		s--;
 	}
 	_putchar('\n');
 }
