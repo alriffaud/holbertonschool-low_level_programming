@@ -29,7 +29,7 @@ int _atoi(char *s)
 			}
 			else if (num_dig == 0)
 			{
-				res = s - '0';
+				res = *s - '0';
 				num_dig = 1;
 				start = 1;
 			}
