@@ -6,7 +6,7 @@
  *
  * Return: None
  */
-void swap_char(char *a, char *b)
+void swap_char(const char *a, const char *b)
 {
 	char aux = *a;
 
@@ -48,7 +48,7 @@ void rev_string(char *s)
 	mitad = count / 2;
 	while (i <= mitad)
 	{
-		swap_char(s[i], s[count - i]);
+		swap_char(&s[i], &s[count - i]);
 		i++;
 	}
 }
