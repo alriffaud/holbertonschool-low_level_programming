@@ -23,13 +23,13 @@ int _atoi(char *s)
 		{
 			if (num_dig > 0 && res < (INT_MAX - 100) / 10)
 			{
-				res = 10 * sign * res + sign * (*s - '0');
+				res = 10 * res + (*s - '0');
 				num_dig++;
 				start = 1;
 			}
 			else if (num_dig == 0)
 			{
-				res = sign * (s - '0');
+				res = s - '0';
 				num_dig = 1;
 				start = 1;
 			}
