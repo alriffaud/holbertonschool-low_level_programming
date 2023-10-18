@@ -1,9 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_array - This function prints a string.
- * @s: Is the pointer to an string.
+ * print_array - This function prints n elements of an array of integers.
+ * @a: Is the pointer to a integer array.
+ * @n: Is the number of elements we want to print.
  *
- * Description: Prints a string, followed by a new line, to stdout.
+ * Description: prints n elements of an array of integers, followed by a
+ * new line.
  * Return: None.
  */
 void print_array(int *a, int n)
@@ -12,13 +15,13 @@ void print_array(int *a, int n)
 
 	if (a != NULL && n > 0)
 	{
-		_putchar(a[0]);
+		printf("%d", a[0]);
 		while (a != NULL && i < n)
 		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(a[i]);
+			printf(",");
+			printf(" ");
+			printf("%d", a[i]);
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
