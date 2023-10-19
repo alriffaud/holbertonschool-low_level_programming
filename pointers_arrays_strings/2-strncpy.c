@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * *_strncpy - This function copies a string.
  * @src: Is the pointer to copy.
@@ -14,8 +13,8 @@ char *_strncpy(char *dest, char *src, int n)
 	char *dest_start = dest;
 	int count = 0;
 
-	if (dest == NULL || src == NULL)
-		return (NULL);
+	if (*dest == '\0' || *src == '\0')
+		return (dest);
 	while (*src != '\0' && count < n)
 	{
 		*dest = *src;
