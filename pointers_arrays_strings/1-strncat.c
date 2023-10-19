@@ -3,6 +3,7 @@
  * *_strncat - This function concatenates two strings.
  * @src: Is the pointer to the origin string.
  * @dest: Is the pointer to return.
+ * @n: Is the maximun number of bytes to use.
  *
  * Description: This function appends the src string to the dest string,
  * it will use at most n bytes from src; and src does not need to be
