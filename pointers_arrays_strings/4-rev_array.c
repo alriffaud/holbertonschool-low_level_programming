@@ -24,7 +24,9 @@ void swapInt(int *a, int *b)
 void reverse_array(int *a, int n)
 {
 	int mitad, i = 0;
-
+	
+	if (n == 0)
+		n = sizeof(a) / sizeof(int);
 	mitad = n / 2;
 	while (i <= mitad)
 	{
