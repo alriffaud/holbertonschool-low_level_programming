@@ -23,21 +23,15 @@ void swapInt(int *a, int *b)
  */
 void reverse_array(int *a, int n)
 {
-	int mitad, count = 0, i = 0;
+	int mitad, i = 0;
 
-	if (n == 0)
+	if (n != 0)
 	{
-		while (*a != '\0')
+		mitad = n / 2;
+		while (i <= mitad)
 		{
-			a++;
-			count++;
+			swapInt(&a[i], &a[n - i - 1]);
+			i++;
 		}
-		n = count - 1;
-	}
-	mitad = n / 2;
-	while (i <= mitad)
-	{
-		swapInt(&a[i], &a[n - i - 1]);
-		i++;
 	}
 }
