@@ -23,7 +23,7 @@ void swapInt(int *a, int *b)
  */
 void reverse_array(int *a, int n)
 {
-	int mitad, i = 0;
+	int mitad, count = 0, i = 0;
 
 	if (n == 0)
 	{
