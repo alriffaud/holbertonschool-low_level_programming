@@ -6,12 +6,12 @@
  *
  * Return: None
  */
-void swapInt(int a, int b)
+void swapInt(int *a, int *b)
 {
-	char aux = a;
+	int aux = *a;
 
-	a = b;
-	b = aux;
+	*a = *b;
+	*b = aux;
 }
 
 /**
@@ -28,7 +28,7 @@ void reverse_array(int *a, int n)
 	mitad = n / 2;
 	while (i <= mitad)
 	{
-		swapInt(a[i], a[n - i]);
+		swapInt(&a[i], &a[n - i]);
 		i++;
 	}
 }
