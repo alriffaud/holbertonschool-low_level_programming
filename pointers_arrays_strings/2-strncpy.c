@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strncpy - This function copies a string.
  * @src: Is the pointer to copy.
