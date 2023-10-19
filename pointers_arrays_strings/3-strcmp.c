@@ -4,8 +4,7 @@
  * @s1: Is the pointer to the first string.
  * @s2: Is the pointer to the second string.
  *
- * Return: 0 if the two strings are equal, -1 if s1 is lower than s2 and
- * 1 if s1 is grater than s2. It work exactly like strcmp.
+ * Return: 0, -1 or 1.
  */
 int _strcmp(char *s1, char *s2)
 {
