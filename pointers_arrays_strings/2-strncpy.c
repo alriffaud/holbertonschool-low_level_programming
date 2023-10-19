@@ -5,7 +5,6 @@
  * @dest: Is the pointer to return.
  * @n: Is the maximun number of bytes to use.
  *
- * Description: This function copies a string and work exactly like strncpy.
  * Return: the pointer to dest.
  */
 char *_strncpy(char *dest, char *src, int n)
