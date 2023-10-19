@@ -24,6 +24,14 @@ char *cap_string(char *s)
 			*s = *s - 32;
 			aux = 0;
 		}
+		else if (*s >= 'A' && *s <= 'Z' && aux == 1)
+		{
+			aux = 0;
+		}
+		else
+		{
+			aux = 0;
+		}
 		s++;
 	}
 	return (begin);
