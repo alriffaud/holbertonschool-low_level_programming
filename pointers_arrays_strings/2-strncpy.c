@@ -21,7 +21,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest++;
 		count++;
 	}
-	if (count < n)
-		*dest = '\0';
 	return (dest_start);
 }
