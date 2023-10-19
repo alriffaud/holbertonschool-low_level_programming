@@ -28,7 +28,7 @@ void reverse_array(int *a, int n)
 	mitad = n / 2;
 	while (i <= mitad)
 	{
-		swapInt(&a[i], &a[n - i]);
+		swapInt(&a[i], &a[n - i - 1]);
 		i++;
 	}
 }
