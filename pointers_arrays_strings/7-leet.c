@@ -10,7 +10,7 @@ char *leet(char *s)
 {
 	char lower[] = "aeotl";
 	char upper[] = "AEOTL";
-	int nums[] = {4, 3, 0, 7, 1};
+	char nums[] = "43071";
 	char *new = s;
 	int i;
 
