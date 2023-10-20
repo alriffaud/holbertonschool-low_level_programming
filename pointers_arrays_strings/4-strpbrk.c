@@ -28,10 +28,10 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 			}
 		}
-		if (accept[j] == '\0')
-			return (NULL);
 		s++;
 	}
+	if (accept[j] == '\0')
+		return (NULL);
 	return (s);
 
 }
