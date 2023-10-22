@@ -15,7 +15,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int j;
 
-	if (s == NULL || accept == NULL || *accept == '\0')
+	if (s == NULL || *s == '\0' || accept == NULL || *accept == '\0')
 	{
 		return (NULL);
 	}
