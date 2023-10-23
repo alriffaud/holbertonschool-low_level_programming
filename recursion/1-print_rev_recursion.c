@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _print_rev_recursion - This function prints a string in reverse order.
@@ -11,10 +12,7 @@
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
-		_putchar('\n');
-	else
-	{
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
-	}
+		return;
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
