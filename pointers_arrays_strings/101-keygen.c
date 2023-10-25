@@ -7,7 +7,7 @@
 int main()
 {
   
-  int length, i;
+  int length = 14, i;
   
   char *password = malloc(length + 1);
 
@@ -23,9 +23,6 @@ int main()
   char *symbols = "!@#$%^&*()";
   int symbols_length = strlen(symbols);
    int char_type = rand() % 4;
-	printf("Length: ");  
-
-  scanf("%d", &length);
 
   if (length <= 0)
   {
