@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * *rot13 - This function encodes a string using rot13.
  * @s: Is the pointer to the string.
@@ -7,23 +8,23 @@
  */
 char *rot13(char *s)
 {
-	char *begin = s;
+	unsigned long int i;
+	int j = 0;
+	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char new[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	unsigned long int length = strlen(letters);
 
-	while (*s != '\0')
+	while (s[j] != '\0')
 	{
-		if ((*s >= 'a' && *s <= 'm') || (*s >= 'A' && *s <= 'M'))
+		for (i = 0; i < length; i++)
 		{
-			*s = *s + 13;
+			if (s[j] == letters[i])
+			{
+				s[j] = new[i];
+				break;
+			}
 		}
-		else if (*s >= 'n' && *s <= 'z')
-		{
-			*s = 'a' + (13 - ('z' - *s)) - 1;
-		}
-		else if (*s >= 'N' && *s <= 'Z')
-		{
-			*s = 'A' + (13 - ('Z' - *s)) - 1;
-		}
-		s++;
+		j++;
 	}
-	return (begin);
+	return (s);
 }
