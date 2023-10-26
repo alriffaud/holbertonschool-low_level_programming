@@ -9,13 +9,16 @@
  */
 void print_number(int n)
 {
-	int num = 1;
+	int num = 1, aux = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		if (n == INT_MIN)
+		{
 			n = -(n + 1);
+			aux = 1;
+		}
 		else
 			n = -n;
 	}
@@ -36,7 +39,10 @@ void print_number(int n)
 	}
 	while (num > 0)
 	{
-		_putchar(n / num + '0');
+		if (n < 10 && aux == 1)
+			_putchar(8 + '0');
+		else
+			_putchar(n / num + '0');
 		n = n % num;
 		num /= 10;
 	}
