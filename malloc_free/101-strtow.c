@@ -35,7 +35,7 @@ char **strtow(char *str)
 	char **concat_str;
 	int i = 0, j = 0, word_len = 0, word_count = 0;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || (*str == ' ' && *(str + 1) == '\0'))
 		return (NULL);
 	word_count = count_words(str);
 	concat_str = malloc((word_count + 1) * sizeof(char *));
