@@ -23,13 +23,18 @@ int main(int argc, char *argv[])
 		res = get_op_func(argv[2]);
 		if (res != NULL)
 		{
-			printf("%d\n", res(atoi(argv[1]),atoi(argv[3])));
+			if (argv[3] == '0' && (argv[2] == '/' || argv[2] == '%'))
+			{
+				printf("Error\n");
+				exit(99);
+			}
+			printf("%d\n", res(atoi(argv[1]), atoi(argv[3])));
 			return (0);
 		}
 		else
 		{
 			printf("Error\n");
-			exit (99);
+			exit(100);
 		}
 	}
 	return (0);
