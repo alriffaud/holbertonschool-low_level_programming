@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		res = get_op_func(argv[2]);
 		if (res != NULL)
 		{
-			if (argv[3] == '0' && (argv[2] == '/' || argv[2] == '%'))
+			if (argv[3][0] == '0' && (argv[2][0] == '/' || argv[2][0] == '%'))
 			{
 				printf("Error\n");
 				exit(99);
