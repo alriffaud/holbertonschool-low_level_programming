@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - This function adds a new node at the end of a
- * dlistint_t list.
+ * insert_dnodeint_at_index - This function inserts a new node at a given
+ * position of a dlistint_t list.
  * @h: It's a pointer to the first element of the list.
  * @idx: It's the index of the node, starting from 0.
  * @n: It's the integer element of the new node.
