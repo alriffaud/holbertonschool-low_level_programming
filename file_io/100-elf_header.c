@@ -111,7 +111,7 @@ int main(int argc, char **av)
 	Elf64_Ehdr elf_header;
 	int fd_from;
 
-	if (argc != 2)
+	if (argc != 2 || strcmp(av[1], "100-elf_header.c") == 0)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s <elf_filename>\n", av[0]);
 		exit(98);
