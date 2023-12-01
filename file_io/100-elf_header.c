@@ -95,7 +95,7 @@ void print_elf_header_info(Elf64_Ehdr *header)
 	printf("  Type:                              ");
 	header_switch2(header->e_type);
 	printf("  Entry point address:               0x");
-	printf("%lx\n", (unsigned long)header->e_entry);
+	printf("%lx \n", (unsigned long)header->e_entry);
 }
 
 /**
